@@ -1,0 +1,22 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "build active file (g++-14)",
+      "type": "shell",
+      "command": "/opt/homebrew/bin/g++-14",
+      "args": [
+        "-std=gnu++17",
+        "-O2",
+        "${file}",
+        "-o",
+        "${workspaceFolder}/build/Debug/outDebug"
+      ],
+      "problemMatcher": ["$gcc"],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
+    }
+  ]
+}

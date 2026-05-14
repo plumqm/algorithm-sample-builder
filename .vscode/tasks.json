@@ -1,0 +1,28 @@
+{
+    "tasks": [
+        {
+            "type": "cppbuild",
+            "label": "build active file (g++-14)",
+            "command": "/opt/homebrew/bin/g++-14",
+            "args": [
+                "-std=gnu++17",
+                "-O2",
+                "${file}",
+                "-o",
+                "${workspaceFolder}/捏数据/build/Debug/outDebug"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}/捏数据"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "detail": "Build active C++ file using Homebrew g++."
+        }
+    ],
+    "version": "2.0.0"
+}
